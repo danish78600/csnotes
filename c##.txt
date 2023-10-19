@@ -1,0 +1,25 @@
+class is a user defined type
+structures is user defined type
+
+structures in c# can contain most of the members what a class can contain such as field method constructor method properties
+
+modifier struct  Name
+{
+define members here
+}
+
+difference between class and structure
+class is a ref type whereas structure is a value type
+
+1. struct(value type) is stored in stack and class(ref type) is stored in heap
+
+2. we use classes for reperensting entities with larger volume data
+but structures are used for representing smaller volume data(maximum 32 bit)
+
+note-all predefined data types whcih come under ref type category(such as string or object) are classes whereas all the predefined data type under value type category (Int32).single,bool are structured
+
+
+3. in class we have to use new keyword for instance creation but in structure new keyword is not mandatory
+
+4. fields of a class can be initialized at the time of declaration whereas it is not possible with fields in structures
+

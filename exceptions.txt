@@ -1,0 +1,80 @@
+type of error:-
+compile time -due to syntax mistakes
+runtime -occur at the runtime
+
+runtime error can occur due to-
+wrong implementation of logic
+wrong input supplied
+missing req resorces
+
+exception is a class whcih is responsible for runtime errors and abnormal terminations of program
+
+exception class contains :-
+logic for abnormal condition
+readonly prop for display an error msg which is declared as virtual means that it can be overwritten
+
+exception child classes are-
+application exception-non fatal error
+system exception-fatal error.e.g-index out of bond execption
+
+fatal error - actions should never be performed . e.g. dividing a no with 0 .this execption is perfromed by clr(common langauge runtime)
+non fatal-we can perform but we dont want to perform it  .exception caused by programmer
+
+
+if there is divide by 0 exception then the clr will call the instance of exception class and will display the error message so the object thrown by the clr caused destrcution that leads to abnormal termination of the program
+
+so to control this we have a mechanism called exception handling whihc enables to stop the termination of program during a runtime error
+
+it has 3 advantages-
+statemnet that are not realted with error can executed
+we can display user friendly error messages 
+we can perform coorective actions to resolve the program
+
+to handle the exception we have to use try catch block
+
+try{
+//statement which execute runtime error
+}
+catch{
+stmts whcih will execute only when there is runtime error
+}
+
+
+so with this use of exception handling there is no abnormal termination
+
+finally {
+}
+it is the block which will execute either if the try and catch donot execute
+
+//APPLICATION EXCETIONS-in this type clr will not throw exception but programer will throw exceptions
+
+
+system exception-based on the predefined conditions clr throw exception 
+
+under exception class there are 2 classes-
+system exception
+application exception
+
+ApplicationException ex=new ApplicationException("error message");
+throw ex;
+
+OR
+
+throw new ApplicationException("error message");
+
+with the use of defining exception classes we can more clearly throw an good exception
+
+defining our own exception
+
+public class DivideByOddException:ApplicationException
+{
+public override string Message()
+{
+get{
+return "attempted to divide by odd no";
+}
+}
+}
+
+so we can define that exceptions that we know have to be used multiple times
+

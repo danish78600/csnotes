@@ -1,0 +1,55 @@
+its a type safe function pointer
+
+a delegate hold reference of a method and then calls the method for execution
+
+to call a method by using a delegate we have 3 steps :
+1. defining  a delegate
+modifier delegate voidtype name(parameter list)
+
+note-parameter and return type of delegate would must be same as that of method
+
+and the name of delegate must be different from that of method
+
+a delegate is a user defined type and is reference type and this is defined under namespace
+
+2. instatiating the delegate-by creating instance of the delegate and in this instance we have to pass method name as a parameter
+
+3. calling the delegate by passing req parameter value so internaly the method which is bound with the delegate is executed
+
+//MULTICAST DELEGATES
+
+we can call both static and non static methods by delegates
+
+multicast delegates are the delegates that holds the reference of more than one method
+
+these are used when method have same type and no of parameters i.e. method must have the same type of signature
+
+but if both the methods are value returning then we will get only one value as firstly the first method returns a value but this value will be overriden by the 2nd returned value
+
+so while using multicast delegates be sure that the methods are non value returning .
+
+//ANONYMOUS DELEGATES
+
+without binding a named method to delegate we can bind an unmamed code block to the delegate
+
+anonmyous methods are suggested only for smaller volumes of code
+
+//LAMBADA EXPRESSION DELEGATES
+
+lambda is a shorthand of anonymous delegates
+
+in anonymous delegates we dont need to declare keyword delegate or the paraeter type of the method so with the use of lambada expression (=>) we can skip the delegate keyword and the parameter type of the methods
+
+generic delegates-
+basically there are 3 pre-defined delegates
+func-for value returning method
+predicate-when we want the return type as boolean
+action-non value returning method
+
+we can also use lambda expressions in this type of delegates
+
+func contain parameters - no of inputs and one paraametr for output
+
+Func<inp1,inp2,inp3,out>
+
+

@@ -1,0 +1,23 @@
+strings are immutable which means that it cannot be modified
+
+so if we concat a string then
+
+string str="hello";
+str1=str+" world";
+
+the above will not concatenate but it will create 2 diff strings
+hello
+hello world
+
+every time the memory gets allocated for the string
+
+so if there are 100changes then it will cretae 100 different copies so to solve this problem we will use string builder as it is mutable
+
+StringBuilder sb=new StringBuilder("Hello");//16characters of memory is allocated but if we append more than 16 characters then the capacity will be doubled means in this case it will be from 16 to 32
+
+sb.Append("world");
+sb.Append("india");
+
+5 characters are used by hello and space is reserved for 11 more characters
+
+string builder is also very efficient

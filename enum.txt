@@ -1,0 +1,17 @@
+enum-is a user defined type so it is beter to define the enum directly under the namespace but it is also possible to define an enum in a class or structure also
+
+enum are value type
+
+public enum days{
+mon,
+tue,
+wed
+}
+
+it is used when we want our user to select value from paricular list .
+
+we cannot convert string to enum
+
+to get access of enum values we can use 0 to get index 1st value directly but to get another values except 1st we have to use the following syntax-
+enumname(value)
+

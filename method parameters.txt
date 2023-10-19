@@ -1,0 +1,5 @@
+type of method parametrs-
+value
+referenece
+output parameters-used when we need more than one return value of the method
+parameter arrays-

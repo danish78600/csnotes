@@ -1,0 +1,33 @@
+dotnet new
+dotnet new typeofapp
+dotnet build 
+dotnet run
+
+.net can be used to
+dekstop app
+web app
+mobile app
+
+.net has provided multiple languages
+
+constructor is a special method whihc is used to initialize variables inside a class
+its name is same as classname
+
+does not return any value-constructor
+
+each and every class req this constructor if we want to create instance of the class
+
+its responsibility of a programmer to define a constructor but if we dont do this then the compiler will implicitely define the constructor by the compiler
+
+implicitly defined constructor are parameterless and are also called default constructor
+
+implicitly defined constructors are public 
+
+we can also define a constructor under the class if we do so we can call it as explicit constructor which can be both parameterised or parameterless
+
+whenever instance of a class is created then the constructor is called implicitly and the varibles are assinged
+
+
+in cs the variables we declared are public and we dont have control on them but to get the control over them we have to use encapsulation-by using getters and setters.
+
+

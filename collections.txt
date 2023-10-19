@@ -1,0 +1,86 @@
+collections
+
+arrays are fixed in length that cannot be increased 
+
+in arrays we have to face the below problems-
+-increasing size
+-inserting or deleting values from middle
+
+example of collections-linked list,hashetable,stack,queue,arraylist etc
+
+the above are non generic collections
+
+array vs array list
+array-fixed lenght not possible to insert item          
+array list variable length(auto resizing) we can insert item in middle
+
+array and arraylist - store values with key[index] to access 
+
+but to store data such as name , location,no,rollno,email etc of an employee then we have to use this hash table which is same as array list but it store data in key value but in this case keys are user-defined
+
+every key will be converted to hash value and is stored
+
+every item contains key value and hash code - which is in integer form
+
+and if we have to fetch the data then we do so by the hash code value
+
+and these hash values are stored in the hash tabel and that hash table is very efficient
+
+in collections we are not typesafe which means that it cannot store purely one type of values but it stores different type of values such as int char str
+
+array-typesafe but fix lentgh
+collection-auto resizing but not type safe
+
+collections are non generic.normally collections are not typesafe means it can store different type of values
+
+so to solve the above problem we have generic collections - type safe and auto resizing 
+
+List<T>  //t represents type of values we want to store in the list
+
+List<int>li=new List<int>();   //this is typesafe and with variable length
+
+
+generics-
+
+if we have to compare two values then it can compare diff data types values which means it is not type safe.secondly we have to compare two objects so every time boxing operation is performed
+
+so to overcome above problems we have generics
+
+<T>-placeholder 
+
+in generics boxing and unboxing is not required
+
+same as passing type param we can pass class name to param 
+
+dynamic keyword is used to declare a variable and defined type in the runtime
+
+dynamic d1=a;
+
+so in genrics we can also use type placeholder afterwards of class
+
+dictionary- replaces hash table
+
+List<T>
+Dictionary(T key T value)
+
+object can store any type of values
+
+in gen collections the type of values we need to store in coll need nto to be predefined types only like int , float,bool,char,string but it can also be user defined type also 
+
+using icomparable and icomparer interfaces----------
+
+to compare the values and do sorting we have 3 types-
+
+to store values in based of sorting of a particular variable
+
+1. by implementing icomparable interface
+
+2. Icomparer - it is used when we have a predefined class and we have to change the logic and then we have to override its compare method to do sorting .
+
+3. Comparision delegate-We can use the Comparison<T> delegate to implement a method that compares two objects of the same type:
+
+
+Ienumerable interface-parent of all the collections means the base class is ienumerable for all the classes of collections
+
+every collection inherits from interface-ienumerable and this contains get enumerator which is implemented in all collection claases whihc helps us to print values by foreach loop of a class variables
+

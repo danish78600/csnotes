@@ -1,0 +1,25 @@
+access specifiers - specical kind of modifiers using which we can define the scope of a type and its members
+
+1. private
+2. internal
+3. protetced
+4. protected internal
+5. public
+
+restriction that we will be provided will only apply outside the class
+
+private is only accessible in the class in whcih it is defined
+
+default scope of members is private
+
+we cannot apply private,protected,protectedinternal on a class
+
+protected members are always accesible in the child class.non child class cannot access
+
+internal is accesible inside same project whther with a child class or non child class
+
+protected internal - if internal or protected any of these is accesbile then protected internal is accesible
+
+static var of a class is initiialised immediately when the execution of a class starts
+
+wherreas 

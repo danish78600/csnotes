@@ -1,0 +1,34 @@
+differnet type of variables :-
+non static
+static 
+constant
+readonly
+
+static-if variable is declared with static modifier or if a var is declared in static block then the varaible is static whereas rest of the others are non static
+
+non static variables are initialised only with the help of insatnce as instance is required for non static varaibel.
+
+static members of a class does not require any insatnce for execution or iniialization whereas instance var are initiased only after creating the instance and every time the insatnce is created differently
+
+in life cycle of a class static var are initialised only one time whereas insatcen variable are insiialised 0 times if no instance is created and n times if n instance are created
+
+iniitialisation of insatnce(non static) var is associated with insatnce creation and constructor calling so inatnce var can be initialised by consturctor calling
+
+we can also initialise static values through constrcutor but it will not create seperate values instead it will overides the previous value
+
+3. if a variable is declared with keyword const we called it constant var and these constant var cannot be modified once after their decalation .
+
+behaviour of constant var will be similar to var of static that is initialised one and only one time in the life cycle of a class and does not req insatnce of a class for accesing or initialising.
+
+only diff between static and constant is static var cna be modified whereas consyant var cannot be modified 
+
+4. readonly-var declared with keyword readonly is known as readonly and these var cannot be modified like constant after initialisation
+
+its not compulsary to initialise the read only var at time of declaration as they can be initialised in a constrcutor
+
+the behaviour of read only var will be similar to non static var that is initialised only after creating the instance 
+
+only diff b/w/ read only and non static var is non static var can be mofied but read only cannot be mondified
+
+const is fixed for whole class wheras read only is fixed for specific instance of a class
+

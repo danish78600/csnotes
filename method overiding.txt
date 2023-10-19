@@ -1,0 +1,10 @@
+re-implementing a parent class method under child class with same signature-method overriding.this can be performed only within parent child classes.but in this child class req permisssion from parent class.overiding is all about changing the behaviour of parent method under child method
+
+overloading-defining multiple method with same name by changing their parameters.this can be performed either within same class or with child-parent class.while overloading a prent class method in child class so child class doesnot req to take any permission from parent class.overloadign is all about showing multiple behavuours of a method 
+
+if we want to override a parent method in child class then the method should be decalred with virtual modifier in parent classs
+
+virtual means that this method is overridable as parent class is giving permission to child class
+
+any virtual method of paretn class can be overriten by child class by using override modifier
+

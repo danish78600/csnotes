@@ -1,0 +1,17 @@
+it is a member of a class and with this our class works as a virtual array
+we cannot apply on a class directly
+
+modifier type this[parameter list]
+{
+get<stmts>
+set<stmts>
+}
+
+
+indexer is defined on current class by this keyword
+
+value is implicit variable that provide access to value provided by the user
+
+but in indexers value is object so we have to typecast them to respective data types
+
+

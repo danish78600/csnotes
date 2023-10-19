@@ -1,0 +1,16 @@
+operator overloading-is an approacah of multiple behaviour to an operator and it will vary based on the operand 
+for e.g.  + is addition operators when use b/w/ addition operator and it is a concatination operator when used between string operands
+
+operator method identifies which operation to perform
+
+public static int operator -(int a,int b)
+
+public static int operator +(int a,int b)
+
+modifier static returntype operator <opt>(operand types)
+{
+logic
+}
+
+writeline is overloaded method
+

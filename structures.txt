@@ -1,0 +1,38 @@
+class is a user defined type
+structures is user defined type
+
+structures in c# can contain most of the members what a class can contain such as field method constructor method properties
+
+modifier struct  Name
+{
+define members here
+}
+
+difference between class and structure
+class is a ref type whereas structure is a value type
+
+1. struct(value type) is stored in stack and class(ref type) is stored in heap
+
+2. we use classes for reperensting entities with larger volume data
+but structures are used for representing smaller volume data(maximum 32 bit)
+
+note-all predefined data types whcih come under ref type category(such as string or object) are classes whereas all the predefined data type under value type category (Int32).single,bool are structured
+
+
+3. in class we have to use new keyword for instance creation but in structure new keyword is not mandatory
+
+4. fields of a class can be initialized at the time of declaration whereas it is not possible with fields in structures
+
+
+5. if a struct contains any fields then we need to initialize those fields either by explicitly calling the defaut constructir with new or if we are not using new then we need explicitly assinged value to the field through the instance
+
+when the instance is created without the new keyword then the constructor is not calling
+
+6. we can define any constructor under the class and if no constructor is defined then there will be an implicit constructor whihc is default whreas in case of a struct parameterless or default constructor are implicited as we cannnot define define explicitly constructor but we can only define parameterised constructor
+
+7. if zero constructors of defined in a class after compilation there will be one constructor as if we define n constructor then after compilation there will be n construcor whereas in case of constructor if we define 0 constructir as after compilation there will be 1 constructor and if we deifne n constructor so after compilation there will be n+1 constructor
+
+8. class can be inherited from anotger classes whereas cnstructor cannot be inherited from another strictures
+
+9. class and structures both can implement interfaces
+

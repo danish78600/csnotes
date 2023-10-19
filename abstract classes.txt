@@ -1,0 +1,26 @@
+abstract classes and abstract methods
+
+a method without any method body is known as abstract method what the method contains is only declaration of the method
+
+public abstract void add(int x,int y);
+
+for using abstratc methods the class must be defined as abstract
+
+if a method is declared as abstarct under any class so child class of this class is responsible for its implementation
+
+concept of abstract method will be near similar to the concept of method overridingg
+
+but in method overridign overriding is optional but in abstract methods it imposes restriction to the child class to implement the method means it is mandatory for the child class to implement the parent class method
+
+and in abstract there is no re-implementation it is implementation
+
+abstratc class cna also contain non abstract methods
+
+so the child class of abstratc class must have to implement the abstarct methods
+
+and to consume non abstarct methods we have to first implement the every abstract method of parent class 
+
+we can never create an instance of abstract class
+
+parent class ref can call child class overrident methods but not pure child calss methods
+

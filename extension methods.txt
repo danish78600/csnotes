@@ -1,0 +1,43 @@
+new feature added by c# 3.0
+
+to add new methods in existing class we have to face problems-
+if the source code is missing then we cannot add method 
+permission is not allowed to add methods
+
+inheritence is a mechanism by which we can extend the functionalities of a class
+
+but inheritence will also be a problem-
+1. if base class is sealed class then inheitence will not be applied
+
+2. if the base is structure then inheritence will not be applied
+
+so to overcome the above problem we will use extension methods-which is a mechanism of adding new methods to the existing class or structure without modifiyig the original type
+
+in this process original type donot requuire any perission
+
+so to do so we will have 2 classes 1st-original
+2nd-in which we have to define methods
+
+the 2nd class must be of static type
+
+and then we will bind the 1st and 2nd class methods
+
+static class can contain only static methods
+
+so with the use this phenomena we can bind original class methods with the static class methods
+
+extension methods are defined as static but once they are bound to a class or structure then they turn into non static
+
+if an extension method is defined with same name and signature with existing metgods in class then extension method will not be executed and the preference will go to original method
+
+binding parameters(1st param) will not be taken into consideration
+as it is the name of type with which the method has to bound with
+
+extension param can have one and only one binding parameter and it must be placed 1stly
+
+if extension method is provided with n param then while calling there will be n-1 param as the binding parameter is excluded
+
+we can also add methods to original structure of int32
+
+we can also do so with string-sealed class
+

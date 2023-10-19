@@ -1,0 +1,77 @@
+ An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type stored at contiguous memory locations.
+
+Array is a reference type, so you need to use the new keyword to create an instance of the array. 
+
+destructors are used to clean up resources of an instance
+
+copy const-if we want to create multiple instances with same value in this the const takes the same class as a prameter to it.
+
+access modifiers:
+private 
+public
+protected-available only in the containing class and the class which derieves it.
+
+internal
+protected internal
+
+inheritence-
+
+
+before creating a instance of child clss the base class instance is automatically crated and the constructor of base class is printed firstly.
+
+a base class ref variable can point to a child class
+
+iterfaces-we cannot implement the methods.as interface method only declared
+
+interface methods are public by default and we cannot use explicit access modifier.
+
+interface cannot contain fields
+
+and the class that inherits the interface that class has to implements that method.
+
+clases allow multiple interface inheritence at the same time
+
+but a class cannot inherit more than one class at the same time.
+
+inertface can inherit another interface and the class which inherit the another has to provide implememntation of both the interfaces
+
+we cannot create an instance of an interface but we can give a reference of a class .
+
+for e.g.
+interfacename a=new classname();
+
+explicit interface implementation:-
+in this we cannot use acces modifiers
+
+and after it we cannot acess the method by class ref variabe but only through interface ref variable
+
+//Default implementation
+
+in this took a scenario we have 2 methods one is explicitly implemented and the other is normal so the normal one is considered as default method
+
+asbtract methods cannot be implemented in abstartc class
+it has to be implemented in other class which inherits it.
+
+sealed - means abstract class cannot be used as base class
+
+sealed class cannot be abstract and abstract class cannot be sealed
+
+diff b/w abstraact class and interfaces
+
+interafces members are public by default and we cannot use access modifiers with them
+abstract classes are private by default but we can use access mondifiers with them
+
+interface cannot contain fields
+interface cannot implements its methods
+
+
+enables to invoke derive class method by base class ref at runtime is polymorphism
+
+diff b/w method hiding and method overiding
+
+with the use of new keyword instad of override we means that hide this method and instead call its base class method
+
+method overloading-we can overload method in c sharp but it must have-
+1. different types of paramters OR
+2. different no of parameters (different signature)
+

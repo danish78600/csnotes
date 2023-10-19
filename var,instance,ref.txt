@@ -1,0 +1,33 @@
+variable of a class 
+instance of a class
+reference of a class
+
+class-user defined type
+
+int =100;
+int i=100;
+
+in first line of code memory will not be allocated as int is a blueprint and in 2nd line of code i is the copy of int blueprint
+
+so class is also a data type and we need to create a copy of a class
+
+instance is created with the use of new keyword which has its own memory and never shared with other instacne
+
+first f=new first() //f is instance of class
+
+OR
+
+first f;  //variable declared of a class
+f=new first() //instance created
+
+memory allocation is done after instance creation
+
+memory of different instances are created differently
+
+first f1=new first();
+first f2=f1;   //f2 is the reference of f1 as both will consume same memory as both will print the same output
+
+ref of class- a copy of class which is initialised by using an exisitence insatance and ref of class will not have any memory allocation as they will use the same meory of instance .
+
+ref of a class cna be called as a pointer to the instance and every modification we perform on the members using insatcne reflexts when we acces those members thru reference
+
